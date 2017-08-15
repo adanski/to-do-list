@@ -1,9 +1,11 @@
 package pl.pollub.todolist.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,10 +15,12 @@ import java.util.Map;
 @Entity
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class TaskList implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
+    @NotNull
     private User owner;
     @ManyToMany(mappedBy = "taskLists", fetch = FetchType.EAGER)
     private List<User> collaborators = new ArrayList<>();
