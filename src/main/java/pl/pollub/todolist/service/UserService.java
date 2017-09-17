@@ -1,6 +1,6 @@
 package pl.pollub.todolist.service;
 
-import pl.pollub.todolist.domain.User;
+import pl.pollub.todolist.model.User;
 
 import java.util.List;
 

@@ -2,8 +2,8 @@ package pl.pollub.todolist.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.pollub.todolist.domain.TaskList;
-import pl.pollub.todolist.domain.repository.TaskListRepository;
+import pl.pollub.todolist.model.TaskList;
+import pl.pollub.todolist.model.repository.TaskListRepository;
 
 import java.util.List;
 

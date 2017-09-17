@@ -3,7 +3,7 @@ package pl.pollub.todolist.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import pl.pollub.todolist.domain.TaskList;
+import pl.pollub.todolist.model.TaskList;
 import pl.pollub.todolist.service.TaskListService;
 
 import java.util.List;
